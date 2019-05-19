@@ -1,26 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
+import Navigation from './Navigation';
 
+// 부모라는 App.js에 Header를 전달 
+// Header는 props를 받아서 브라우저 상에 렌더링하는 과정
 
-
-function Header(){
+const Header = props => {
+    // 바로 city에 할당되는 과정 
+    const { city } = props;
     return(
         <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    );
-}
-
+            <Navigation />
+            <img src={logo} className="App-logo" alt="test"></img>
+            <div>여기는 {city}입니다.</div>
+        </header>
+    );  
+};
 export default Header;
 // 모듈화 시키는 과정 
