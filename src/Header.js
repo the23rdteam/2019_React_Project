@@ -9,11 +9,13 @@ const Header = props => {
     // 바로 city에 할당되는 과정 
     const { city } = props;
     return(
+        <>
+        <Navigation />
         <header className="App-header">
-            <Navigation />
             <img src={logo} className="App-logo" alt="test"></img>
             <div>여기는 {city}입니다.</div>
         </header>
+        </>
     );  
 };
 export default Header;

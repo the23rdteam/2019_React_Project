@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+// 이 앱이 라우터를 사용할 준비가 안 되었는데 
+// Navigation을 만드려는 것이 잘못되었던 부분!
 const Navigation = () => {
     // JSX는 Single Element를 돌려주어야 한다. 
     return (
