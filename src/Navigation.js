@@ -16,9 +16,9 @@ const Navigation = () => {
             <link rel="stylesheet" href={bootstrapAPI} integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
             <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-outline-primary btn-lg"><Link to="/">Home</Link></button>
-                    <button type="button" class="btn btn-secondary btn-lg"><NavLink to="/about" activeClassName="selected">About</NavLink></button>
-                    <button type="button" class="btn btn-outline-info btn-lg"><NavLink to="/weather" >Weather</NavLink></button>               
+                    <Link to="/"><button type="button" class="btn btn-outline-primary btn-lg">Home</button></Link>
+                    <NavLink to="/about" activeClassName="selected"><button type="button" class="btn btn-secondary btn-lg">About</button></NavLink>
+                    <NavLink to="/weather" ><button type="button" class="btn btn-outline-info btn-lg">Weather</button></NavLink>  
             </div>
         </>
          );
